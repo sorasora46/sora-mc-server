@@ -10,6 +10,6 @@ RUN apt update \
     && chmod +x install.sh \
     && ./install.sh
 
-EXPOSE 19132
+EXPOSE 19132/udp
 
 CMD ["./start.sh"]
