@@ -1,0 +1,10 @@
+services:
+  mc-sora:
+    build: .
+    ports:
+      - 29291:19132/udp
+    volumes:
+      - mc-sora-data:/data
+
+volumes:
+  mc-sora-data: {}
